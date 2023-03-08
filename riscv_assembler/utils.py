@@ -37,6 +37,9 @@ class Toolkit:
 			"addw", "subw", "sllw",
 			"slrw", "sraw", "mul",
 			"mulh", "mulu", "mulsu",
+			"bmmi_mmul", "bmmi_add",
+			"bmmi_sub", "bmmi_nshl",
+			"bmmi_nshr", "bmmi_halt",
 			"div", "divu", "rem",
 			"remu"
 		]

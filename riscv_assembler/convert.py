@@ -520,7 +520,7 @@ class AssemblyConverter:
 			for r in res:
 				for e in r:
 					if int(e) != 0 and int(e) != 1:
-						raise Not__binaryNumber(r)
+						raise NotBinaryNumber(r)
 				if len(r) != 32:
 					raise WrongInstructionSize(len(r))
 

@@ -68,7 +68,7 @@ class AssemblyConverter:
 	instr_data = {}
 	R_instr = [
 		"add","sub", "sll", 
-		"sltu", "xor", "srl", 
+		"slt", "sltu", "xor", "srl",
 		"sra", "or", "and",
 		"addw", "subw", "sllw",
 		"slrw", "sraw", "mul",
@@ -80,7 +80,7 @@ class AssemblyConverter:
 		"remu"
 	]
 	I_instr = [
-		"addi", "lb", "lw",
+		"addi", "lb", "lh", "lw",
 		"ld", "lbu", "lhu",
 		"lwu", "fence", "fence.i", 
 		"slli", "slti", "sltiu", 

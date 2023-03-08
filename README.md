@@ -18,7 +18,3 @@ The package can be installed using pip:
 If issues arise try:
 
     $ python3 -m pip install riscv-assembler
-
-It's possible tha the ``bitstring`` dependency might not install correctly. If this occurs, you can simply pip install it separately:
-
-    $ pip install bitstring

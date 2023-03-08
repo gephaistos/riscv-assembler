@@ -1,7 +1,7 @@
-from bitstring import BitArray
+import os
 import math as m
 from pathlib import Path
-import os
+
 
 __all__ = ['AssemblyConverter']
 class WrongInstructionSize( Exception ):

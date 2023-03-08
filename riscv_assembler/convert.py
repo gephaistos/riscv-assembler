@@ -135,7 +135,7 @@ class AssemblyConverter:
 		#get instruction data and register mapping
 		self.r_map, self.instr_data = self.__pre()
 
-	def __str__():
+	def __str__(self):
 		return "AssemblyConverter(output_type={}, nibble={}, filename={}, hexmode={})".format(
 			self.output_type, self.nibble,
 			self.filename, self.hexMode

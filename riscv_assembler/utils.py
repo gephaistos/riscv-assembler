@@ -1,6 +1,8 @@
 from pathlib import Path
 import math
 
+from .convert import WrongInstructionType
+
 __all__ = ["Toolkit", "nibbleForm"]
 
 # -----------------------------------------------------------------------------------------
@@ -139,7 +141,7 @@ class Toolkit:
         self.UJ_instr = UJ_instr
         self.pseudo_instr = pseudo_instr
 
-    def __str__():
+    def __str__(self):
         return "Toolkit(filename={})".format(self.filename)
 
     def hex(self, x, leading_zero=True):

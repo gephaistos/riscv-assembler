@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riscv-assembler"
+version = "1.0.15"
+description="RISC-V assembler"
+readme = "README.md"
+authors = [
+  {name = "Kaya Çelebi", email = "kayacelebi17@gmail.com"}
+]
+requires-python = ">=3"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+repository = "https://github.com/kcelebi/riscv-assembler"
+
+[tool.setuptools]
+packages = ["riscv_assembler"]
+
+[tool.setuptools.package-data]
+riscv_assembler = ["data/*.dat"]
+
+[project.optional-dependencies]
+test = ["pytest"]

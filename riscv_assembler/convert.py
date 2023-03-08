@@ -216,10 +216,9 @@ class AssemblyConverter:
 	#convert instructions from binary to hex
 	def hex(self,x,leading_zero=True):
 		if leading_zero:
-			num = str(hex(int(x,2)))
-			return "0x"+num[2::].zfill(8)
+			return '{:08x}'.format(int(x, 2))
 		else:
-			return str(hex(int(x,2)))
+			return '{:x}'.format(int(x, 2))
 
 	#set hexMode to T/F
 	def setHex(self, x):
